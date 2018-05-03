@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Aplikácia">
+            <items>
+              <MenuItem mnemonicParsing="false" text="O aplikácií" />
+                  <MenuItem mnemonicParsing="false" text="Koniec" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane prefHeight="455.0" prefWidth="695.0">
+         <children>
+            <PasswordField layoutX="42.0" layoutY="324.0" prefHeight="25.0" prefWidth="200.0" promptText="Heslo" />
+            <TextField layoutX="42.0" layoutY="270.0" prefHeight="25.0" prefWidth="200.0" promptText="E-mail" />
+            <Button layoutX="84.0" layoutY="375.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="116.0" text="Prihlásiť sa" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="138.0" fitWidth="134.0" layoutX="75.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@vse.png" />
+               </image>
+            </ImageView>
+            <TextField layoutX="397.0" layoutY="14.0" prefHeight="25.0" prefWidth="200.0" promptText="Meno" />
+            <TextField layoutX="397.0" layoutY="56.0" prefHeight="25.0" prefWidth="200.0" promptText="Prijmeni" />
+            <TextField layoutX="397.0" layoutY="97.0" prefHeight="25.0" prefWidth="200.0" promptText="Pohlavi" />
+            <TextField layoutX="397.0" layoutY="138.0" prefHeight="25.0" prefWidth="200.0" promptText="Datum narozeni" />
+            <Label layoutX="35.0" layoutY="14.0" text="Buddy Systém">
+               <font>
+                  <Font name="Berlin Sans FB" size="41.0" />
+               </font>
+            </Label>
+            <TextField layoutX="397.0" layoutY="180.0" prefHeight="25.0" prefWidth="200.0" promptText="Stat" />
+            <TextField layoutX="397.0" layoutY="301.0" prefHeight="25.0" prefWidth="200.0" promptText="E-mail" />
+            <TextField layoutX="397.0" layoutY="260.0" prefHeight="25.0" prefWidth="200.0" promptText="Telefon" />
+            <TextField layoutX="397.0" layoutY="222.0" prefHeight="25.0" prefWidth="200.0" promptText="Adresa" />
+            <Button layoutX="430.0" layoutY="375.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="134.0" text="Registrovať sa" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <TextField layoutX="397.0" layoutY="337.0" prefHeight="25.0" prefWidth="200.0" promptText="Heslo" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

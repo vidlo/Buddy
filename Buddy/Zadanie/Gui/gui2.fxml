@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Aplikácia">
+            <items>
+              <MenuItem mnemonicParsing="false" text="O aplikácií" />
+                  <MenuItem mnemonicParsing="false" text="Odhlasiť sa" />
+                  <MenuItem mnemonicParsing="false" text="Koniec" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane prefHeight="590.0" prefWidth="1024.0">
+         <children>
+            <ListView layoutX="537.0" layoutY="58.0" prefHeight="200.0" prefWidth="200.0" />
+            <ListView layoutX="537.0" layoutY="318.0" prefHeight="200.0" prefWidth="200.0" />
+            <ListView layoutX="788.0" layoutY="58.0" prefHeight="200.0" prefWidth="200.0" />
+            <ListView layoutX="788.0" layoutY="318.0" prefHeight="200.0" prefWidth="200.0" />
+            <ListView layoutX="14.0" layoutY="50.0" prefHeight="487.0" prefWidth="146.0" />
+            <Label layoutX="49.0" layoutY="14.0" text="Žiadosti">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="120.0" layoutX="353.0" layoutY="361.0" pickOnBounds="true">
+               <image>
+                  <Image url="foto.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="197.0" layoutY="343.0" mnemonicParsing="false" prefHeight="93.0" prefWidth="100.0" text="Prihlasiť na akciu" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="187.0" layoutY="236.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="135.0" text="Pridať akciu" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="345.0" layoutY="236.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="135.0" text="Hľadať" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <TextField layoutX="172.0" layoutY="38.0" prefHeight="25.0" prefWidth="150.0" promptText="ID" />
+            <TextField layoutX="172.0" layoutY="75.0" prefHeight="25.0" prefWidth="150.0" promptText="Druh" />
+            <TextField layoutX="172.0" layoutY="111.0" prefHeight="25.0" prefWidth="150.0" promptText="Nazev" />
+            <TextField layoutX="348.0" layoutY="38.0" prefHeight="25.0" prefWidth="150.0" promptText="Datum od" />
+            <TextField layoutX="348.0" layoutY="75.0" prefHeight="25.0" prefWidth="150.0" promptText="Datum do" />
+            <TextField layoutX="348.0" layoutY="111.0" prefHeight="25.0" prefWidth="150.0" promptText="Cas od" />
+            <TextField layoutX="348.0" layoutY="145.0" prefHeight="25.0" prefWidth="150.0" promptText="Cas do" />
+            <TextField layoutX="172.0" layoutY="181.0" prefHeight="25.0" prefWidth="150.0" promptText="Max. pocet" />
+            <TextField layoutX="348.0" layoutY="181.0" prefHeight="25.0" prefWidth="150.0" promptText="Cena" />
+            <TextField layoutX="172.0" layoutY="145.0" prefHeight="25.0" prefWidth="150.0" promptText="Misto" />
+            <Label layoutX="575.0" layoutY="14.0" text="Zoznam akcií">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="800.0" layoutY="14.0" text="Zoznam študentov">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="807.0" layoutY="279.0" text="Info o študentovi">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="585.0" layoutY="279.0" text="Info o akcií">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <CheckBox layoutX="204.0" layoutY="491.0" mnemonicParsing="false" text="Zaplatené">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </CheckBox>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
