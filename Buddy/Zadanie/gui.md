@@ -1,6 +1,6 @@
 # Návrh grafického rozhrania
 
-####*[Spät na zadanie](readme.md)*
+*[Spät na zadanie](readme.md)*
 
 ### *Prihlasovacia obrazovka*
 

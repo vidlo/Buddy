@@ -1,6 +1,6 @@
 # Scenáre
 
-####*[Spät na zadanie](readme.md)*
+*[Spät na zadanie](readme.md)*
 
 ### *Filtrovať akcie*
 

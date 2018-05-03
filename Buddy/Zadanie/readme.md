@@ -46,7 +46,7 @@ Ondrej Vitko | Use Case Diagram; Class Diagram; Scenáre; Návrh GUI; Úprava Ma
 ![usecase](https://raw.githubusercontent.com/vidlo/Buddy/dev_vidlo/Buddy/Zadanie/Obr%C3%A1zky/usecase.PNG)
 
 ## *Popis Use Case*
-###*[Popis](Scenáre.md)*###
+###*[Popis](Scenáre.md)*
 
 ## *Class Diagram*
 ![classdiagram](https://raw.githubusercontent.com/vidlo/Buddy/dev_vidlo/Buddy/Zadanie/Obr%C3%A1zky/classdiagram.PNG)
@@ -55,7 +55,7 @@ Ondrej Vitko | Use Case Diagram; Class Diagram; Scenáre; Návrh GUI; Úprava Ma
 ![struktura]()
 
 ## *Návrh uživatelského rozhraní*
-###*[Návrh GUI](gui.md)*###
+###*[Návrh GUI](gui.md)*
 
 ## *Konvence*
 Náš tím sa bude držat konvenie uvedenej na [stránke predmetu](https://java.vse.cz/4it101/Konvence)
