@@ -35,12 +35,12 @@ zda student akci zaplatil.
 ## *Seznam úkolů a jejich přiřazení členům týmu*
 
 Člen tímu | Úkoly | Triedy
---- | :---: | :---:
-Alexandra Melnykova | Use Case Diagram; Class Diagram; |
-Pavel Pivovarčík | Use Case Diagram; Class Diagram; |
-Tomáš Procash | Use Case Diagram; Class Diagram; |
-Aleš Sedlák | Use Case Diagram; Class Diagram; |
-Ondrej Vitko | Use Case Diagram; Class Diagram; Scenáre; Návrh GUI; Úprava Markdownu; |
+:---: | :---: | :---:
+Alexandra Melnykova | Use Case Diagram; Class Diagram; Základné triedy | Akce.java; StudentVSE.java; Ucast.java; ZahranicniStudent.java;
+Pavel Pivovarčík | Use Case Diagram; Class Diagram; Kontroler | BuddySystem.java; PopUpKontroler.java;
+Tomáš Procash | Use Case Diagram; Class Diagram; GUI; | HlavniOkno.fxml; PopUp.fxml;
+Aleš Sedlák | Use Case Diagram; Class Diagram; Databáza; | Database.java;
+Ondrej Vitko | Use Case Diagram; Class Diagram; Scenáre; Návrh GUI; Úprava Markdownu; | KontrolerHlavnihoOkna.java;
 
 ## *Use Case Diagram*
 ![usecase](https://raw.githubusercontent.com/vidlo/Buddy/dev_vidlo/Buddy/Zadanie/Obr%C3%A1zky/usecase.PNG)
@@ -52,7 +52,7 @@ Ondrej Vitko | Use Case Diagram; Class Diagram; Scenáre; Návrh GUI; Úprava Ma
 ![classdiagram](https://raw.githubusercontent.com/vidlo/Buddy/dev_vidlo/Buddy/Zadanie/Obr%C3%A1zky/classdiagram.PNG)
 
 ## *Struktúra databáze*
-![struktura]()
+Databáza je relizovaná pomocou MySQL. Ide o lokálnu databázu vytvorenú aplikáciou XAMPP.
 
 ## *Návrh uživatelského rozhraní*
 *[Návrh GUI](gui.md)*
