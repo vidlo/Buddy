@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="325.0" prefWidth="217.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="buddysystem.Main.PopUpKontroler">
+   <children>
+      <AnchorPane prefHeight="441.0" prefWidth="484.0">
+         <children>
+            <Label layoutX="158.0" layoutY="14.0" text="Vyberte Buddyho">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tVSE" layoutX="60.0" layoutY="55.0" prefHeight="297.0" prefWidth="365.0">
+              <columns>
+                <TableColumn prefWidth="85.0" text="Xname" fx:id="xname" />
+                <TableColumn fx:id="jmeno" prefWidth="279.0" text="Jmeno" />
+              </columns>
+            </TableView>
+            <Button layoutX="109.0" layoutY="363.0" mnemonicParsing="false" onAction="#Dale" prefHeight="43.0" prefWidth="267.0" text="OK" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
