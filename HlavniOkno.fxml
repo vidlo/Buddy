@@ -7,13 +7,13 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="779.0" prefWidth="1138.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="buddy.Main.Controller">
+<AnchorPane id="AnchorPane" prefHeight="779.0" prefWidth="1138.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="buddysystem.Main.KontrolerHlavnihoOkna">
    <children>
       <AnchorPane fx:id="pMenu" prefHeight="779.0" prefWidth="1138.0">
          <children>
-            <Button layoutX="343.0" layoutY="181.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="452.0" text="Studenti VŠE" />
-            <Button layoutX="343.0" layoutY="324.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="452.0" text="Zahraniční studenti" />
-            <Button layoutX="343.0" layoutY="459.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="452.0" text="Akce" />
+            <Button layoutX="343.0" layoutY="181.0" mnemonicParsing="false" onAction="#VSE" prefHeight="54.0" prefWidth="452.0" text="Studenti VŠE" />
+            <Button layoutX="343.0" layoutY="324.0" mnemonicParsing="false" onAction="#Zahranicni" prefHeight="54.0" prefWidth="452.0" text="Zahraniční studenti" />
+            <Button layoutX="343.0" layoutY="459.0" mnemonicParsing="false" onAction="#Akce" prefHeight="54.0" prefWidth="452.0" text="Akce" />
          </children>
       </AnchorPane>
       <AnchorPane fx:id="pVSE" prefHeight="779.0" prefWidth="1138.0" visible="false">
@@ -30,10 +30,10 @@
                   <TableColumn fx:id="vTelefon" prefWidth="123.0" text="Telefon" />
               </columns>
             </TableView>
-            <Button layoutX="81.0" layoutY="559.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="273.0" text="Přidej studenta" />
-            <Button layoutX="409.0" layoutY="559.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="273.0" text="Smaž studenta" />
-            <Button layoutX="731.0" layoutY="559.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="273.0" text="Ulož změny" />
-            <Button layoutX="409.0" layoutY="650.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="273.0" text="Zpět do menu" />
+            <Button layoutX="81.0" layoutY="559.0" mnemonicParsing="false" onAction="#PridejStudentaVSE" prefHeight="54.0" prefWidth="273.0" text="Přidej studenta" />
+            <Button layoutX="409.0" layoutY="559.0" mnemonicParsing="false" onAction="#SmazStudentaVSE" prefHeight="54.0" prefWidth="273.0" text="Smaž studenta" />
+            <Button layoutX="731.0" layoutY="559.0" mnemonicParsing="false" onAction="#UpravaStudentaVSE" prefHeight="54.0" prefWidth="273.0" text="Ulož změny studenta" />
+            <Button layoutX="409.0" layoutY="650.0" mnemonicParsing="false" onAction="#Menu" prefHeight="54.0" prefWidth="273.0" text="Zpět do menu" />
             <Label layoutX="488.0" layoutY="24.0" text="Studenti VŠE">
                <font>
                   <Font size="25.0" />
@@ -48,10 +48,10 @@
                   <Font size="25.0" />
                </font>
             </Label>
-            <Button layoutX="409.0" layoutY="649.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="273.0" text="Zpět do menu" />
-            <Button layoutX="731.0" layoutY="560.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="273.0" text="Ulož změny" />
-            <Button layoutX="409.0" layoutY="560.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="273.0" text="Smaž studenta" />
-            <Button layoutX="81.0" layoutY="560.0" mnemonicParsing="false"  prefHeight="54.0" prefWidth="273.0" text="Přidej studenta" />
+            <Button layoutX="409.0" layoutY="649.0" mnemonicParsing="false" onAction="#Menu" prefHeight="54.0" prefWidth="273.0" text="Zpět do menu" />
+            <Button layoutX="731.0" layoutY="560.0" mnemonicParsing="false" onAction="#UpravaZahranicnihoStudenta" prefHeight="54.0" prefWidth="273.0" text="Ulož změny studenta" />
+            <Button layoutX="409.0" layoutY="560.0" mnemonicParsing="false" onAction="#SmazZahranicnihoStudenta" prefHeight="54.0" prefWidth="273.0" text="Smaž studenta" />
+            <Button layoutX="81.0" layoutY="560.0" mnemonicParsing="false" onAction="#VyberStudenta" prefHeight="54.0" prefWidth="273.0" text="Přidej studenta" />
             <TableView fx:id="tZahranicni" editable="true" layoutX="15.0" layoutY="58.0" prefHeight="467.0" prefWidth="1108.0">
                <columns>
                   <TableColumn fx:id="zID" prefWidth="46.0" text="ID" />
@@ -88,12 +88,12 @@
                   <Font size="25.0" />
                </font>
             </Label>
-            <Button layoutX="443.0" layoutY="661.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="273.0" text="Zpět do menu" />
-            <Button layoutX="117.0" layoutY="571.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="273.0" text="Přidej Akci" />
-            <Button layoutX="774.0" layoutY="661.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="273.0" text="Smaž Akci" />
-            <Button layoutX="117.0" layoutY="661.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="273.0" text="Uprav Akci" />
-            <Button layoutX="774.0" layoutY="571.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="273.0" text="Detail Akce" />
-            <ComboBox fx:id="comboFiltruj" layoutX="505.0" layoutY="586.0" prefWidth="150.0" />
+            <Button layoutX="443.0" layoutY="661.0" mnemonicParsing="false" onAction="#Menu" prefHeight="54.0" prefWidth="273.0" text="Zpět do menu" />
+            <Button layoutX="117.0" layoutY="571.0" mnemonicParsing="false" onAction="#PridaniAkce" prefHeight="54.0" prefWidth="273.0" text="Přidej Akci" />
+            <Button layoutX="774.0" layoutY="661.0" mnemonicParsing="false" onAction="#SmazaniAkce" prefHeight="54.0" prefWidth="273.0" text="Smaž Akci" />
+            <Button layoutX="117.0" layoutY="661.0" mnemonicParsing="false" onAction="#UpravaAkce" prefHeight="54.0" prefWidth="273.0" text="Uprav Akci" />
+            <Button layoutX="774.0" layoutY="571.0" mnemonicParsing="false" onAction="#Detail" prefHeight="54.0" prefWidth="273.0" text="Detail Akce" />
+            <ComboBox fx:id="comboFiltruj" layoutX="505.0" layoutY="586.0" onAction="#Filtruj" prefWidth="150.0" />
             <Label layoutX="570.0" layoutY="554.0" text="Filtr" />
          </children></AnchorPane>
       <AnchorPane fx:id="pPracovniAkce" prefHeight="779.0" prefWidth="1138.0" visible="false">
@@ -108,8 +108,8 @@
             <DatePicker fx:id="tfDatumDo" layoutX="382.0" layoutY="317.0" />
             <TextField fx:id="tfMisto" layoutX="373.0" layoutY="390.0" prefHeight="25.0" prefWidth="366.0" />
             <TextArea fx:id="tfPopis" layoutX="339.0" layoutY="463.0" prefHeight="181.0" prefWidth="438.0" />
-            <Button layoutX="283.0" layoutY="664.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="273.0" text="Potvrd akci" />
-            <Button layoutX="558.0" layoutY="664.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="273.0" text="Storno" />
+            <Button layoutX="283.0" layoutY="664.0" mnemonicParsing="false" onAction="#PotvrdAkci" prefHeight="54.0" prefWidth="273.0" text="Potvrd akci" />
+            <Button layoutX="558.0" layoutY="664.0" mnemonicParsing="false" onAction="#Storno" prefHeight="54.0" prefWidth="273.0" text="Storno" />
             <Label layoutX="522.0" layoutY="363.0" text="Místo konání" />
             <Label layoutX="544.0" layoutY="437.0" text="Popis" />
             <Label layoutX="442.0" layoutY="291.0" text="Datum_do" />
@@ -143,10 +143,10 @@
             </TableView>
             <Label layoutX="226.0" layoutY="241.0" text="Účast" />
             <Label layoutX="855.0" layoutY="241.0" text="Zahraniční studenti" />
-            <Button layoutX="475.0" layoutY="350.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="193.0" text="Přidej studenta na akci" />
-            <Button layoutX="475.0" layoutY="458.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="193.0" text="Smaž studenta z akce" />
-            <Button layoutX="436.0" layoutY="703.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="273.0" text="Zpět do přehledu akcí" />
-            <Button layoutX="478.0" layoutY="560.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="193.0" text="Změn stav zaplaceno" />
+            <Button layoutX="475.0" layoutY="350.0" mnemonicParsing="false" onAction="#PridejUcast" prefHeight="54.0" prefWidth="193.0" text="Přidej studenta na akci" />
+            <Button layoutX="475.0" layoutY="458.0" mnemonicParsing="false" onAction="#SmazUcast" prefHeight="54.0" prefWidth="193.0" text="Smaž studenta z akce" />
+            <Button layoutX="436.0" layoutY="703.0" mnemonicParsing="false" onAction="#ZpetDoAkci" prefHeight="54.0" prefWidth="273.0" text="Zpět do přehledu akcí" />
+            <Button layoutX="478.0" layoutY="560.0" mnemonicParsing="false" onAction="#ZaplatUcast" prefHeight="54.0" prefWidth="193.0" text="Změn stav zaplaceno" />
             <TextArea fx:id="areaPopis" editable="false" layoutX="208.0" layoutY="138.0" prefHeight="69.0" prefWidth="723.0" />
             <Label layoutX="541.0" layoutY="110.0" text="Popis akce" />
          </children></AnchorPane>
